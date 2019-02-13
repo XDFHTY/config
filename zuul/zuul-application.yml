@@ -22,3 +22,5 @@ zuul:
       path: /admin-api/**
       serviceId: s-feign
       stripPrefix: false
+foo:
+  name:测试
