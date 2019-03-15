@@ -39,3 +39,9 @@ logging:
     root: info
     com:
       cj: debug
+mybatis:
+  type-aliases-package: com.cj.common.entity
+  mapper-locations: classpath:com/cj/common/mapper/*.xml
+tx-lcn:
+  client:
+    manager-address: 59.110.164.54:8070
