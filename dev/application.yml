@@ -3,6 +3,12 @@ zipkin:
 web:
   upload-path:  D:/file/uj/
 spring:
+  zipkin:
+    base-url: ${zipkin.url}
+    enabled: true
+  sleuth:
+    sampler:
+      percentage: 1
   redis:
     host: 47.94.45.159
     port: 6379
@@ -20,3 +26,6 @@ spring:
     static-path-pattern: /**
   resources:
     static-locations: classpath:/META-INF/resources/,classpath:/resources/,classpath:/static/,classpath:/public/,file:${web.upload-path}
+jasypt:
+  encryptor:
+    password: root
