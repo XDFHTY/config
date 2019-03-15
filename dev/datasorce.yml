@@ -1,2 +1,4 @@
 zipkin:
   url: http://127.0.0.1:9411/
+web:
+  upload-path: D:/file/uj/
