@@ -1,0 +1,52 @@
+zipkin:
+  url:  http://127.0.0.1:9411/
+web:
+  upload-path:  /home/file/uj/
+spring:
+  zipkin:
+    base-url: ${zipkin.url}
+    enabled: true
+  sleuth:
+    sampler:
+      percentage: 1
+  rabbitmq:
+    host: 59.110.164.54
+    port: 5672
+    username: admin
+    password: admin
+  redis:
+    host: 47.94.45.159
+    port: 6379
+    timeout: 0
+    pool:
+      max-wait: -1
+      max-active: 5
+      max-idle: 50
+      min-idle: 10
+  http:
+    multipart:
+      maxFileSize: 50Mb
+      maxRequestSize: 100Mb
+  mvc:
+    static-path-pattern: /**
+  resources:
+    static-locations: classpath:/META-INF/resources/,classpath:/resources/,classpath:/static/,classpath:/public/,file:${web.upload-path}
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: GMT+8
+    serialization: 
+      write-dates-as-timestamps: false
+jasypt:
+  encryptor:
+    password: root
+logging:
+  level: 
+    root: info
+    com:
+      cj: debug
+mybatis:
+  type-aliases-package: com.cj.common.entity
+  mapper-locations: classpath:com/cj/common/mapper/*.xml
+tx-lcn:
+  client:
+    manager-address: 59.110.164.54:8070
