@@ -29,3 +29,8 @@ spring:
 jasypt:
   encryptor:
     password: root
+logging:
+  level: 
+    root: info
+    com:
+      cj: debug
