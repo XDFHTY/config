@@ -9,6 +9,11 @@ spring:
   sleuth:
     sampler:
       percentage: 1
+  rabbitmq:
+    host: 59.110.164.54
+    port: 5672
+    username: admin
+    password: admin
   redis:
     host: 47.94.45.159
     port: 6379
