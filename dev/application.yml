@@ -10,12 +10,12 @@ spring:
     sampler:
       percentage: 1
   rabbitmq:
-    host: 59.110.164.54
+    host: ENC(+YJKD0Er8jXxXpb2DVnp097KOVmjUAQ8)
     port: 5672
-    username: admin
-    password: admin
+    username: ENC(SIfHH2M5id/U0ZI03x+Nbg==)
+    password: ENC(SIfHH2M5id/U0ZI03x+Nbg==)
   redis:
-    host: 47.94.45.159
+    host: ENC(ttbY+nvTWlPDb05Vsi6wqlliA6FwSJ8U)
     port: 6379
     timeout: 0
     pool:
@@ -36,9 +36,6 @@ spring:
     time-zone: GMT+8
     serialization: 
       write-dates-as-timestamps: false
-jasypt:
-  encryptor:
-    password: root
 logging:
   level: 
     root: info
@@ -49,4 +46,4 @@ mybatis:
   mapper-locations: classpath:com/cj/common/mapper/*.xml
 tx-lcn:
   client:
-    manager-address: 59.110.164.54:8070
+    manager-address: ENC(vdESOQXZYndFhdFY850ckoFraCHljumdLNGTr1Z+hkM=)
