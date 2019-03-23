@@ -28,7 +28,7 @@ spring:
     host: ENC(ttbY+nvTWlPDb05Vsi6wqlliA6FwSJ8U)
     port: 6379
     #客户端超时时间单位是毫秒 默认是2000
-    timeout: 10000
+    timeout: 0
     pool:
       #连接池的最大数据库连接数。
       max-active: 10000
