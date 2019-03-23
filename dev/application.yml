@@ -33,7 +33,7 @@ spring:
       #连接池的最大数据库连接数。
       max-active: 10000
       #最大建立连接等待时间,超过将报异常
-      max-wait: 10000
+      max-wait: -1
       #最大空闲数
       max-idle: 300
       min-idle: 50
