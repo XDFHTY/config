@@ -28,6 +28,12 @@ spring:
     #host: ENC(ttbY+nvTWlPDb05Vsi6wqlliA6FwSJ8U)
     host: 127.0.0.1
     port: 6379
+    timeout: 0
+    pool:
+      max-wait: -1
+      max-active: 5
+      max-idle: 50
+      min-idle: 10
   http:
     multipart:
       maxFileSize: 50Mb
