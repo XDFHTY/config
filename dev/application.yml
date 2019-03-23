@@ -26,7 +26,7 @@ spring:
         acknowledge-mode: manual
   redis:
     #host: ENC(ttbY+nvTWlPDb05Vsi6wqlliA6FwSJ8U)
-    
+    host: 127.0.0.1
     port: 6379
   http:
     multipart:
