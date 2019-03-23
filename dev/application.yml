@@ -27,12 +27,17 @@ spring:
   redis:
     host: ENC(ttbY+nvTWlPDb05Vsi6wqlliA6FwSJ8U)
     port: 6379
-    timeout: 0
+    #客户端超时时间单位是毫秒 默认是2000
+    timeout: 10000
     pool:
-      max-wait: 3000
-      max-active: 500
-      max-idle: 50
-      min-idle: 10
+      #连接池的最大数据库连接数。
+      max-active: 10000
+      #最大建立连接等待时间,超过将报异常
+      max-wait: 10000
+      #最大空闲数
+      max-idle: 300
+      min-idle: 50
+
   http:
     multipart:
       maxFileSize: 50Mb
