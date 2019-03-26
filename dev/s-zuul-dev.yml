@@ -46,7 +46,7 @@ zuul:
 
   #传播到其他服务
   sensitive-headers:  Cookie,Set-Cookie,Authorization
-#  ignored-headers:  Access-Control-Allow-Origin,H-APP-Id,Token,APPToken
+  ignored-headers:  Access-Control-Allow-Origin,H-APP-Id,Token,APPToken
   strip-prefix: true
 #  ignored-patterns: '*'
 hystrix:
