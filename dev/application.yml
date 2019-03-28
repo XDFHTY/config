@@ -7,6 +7,11 @@ spring:
     #本项目服务名
     service:
       name: ${spring.application.name}
+    locator:
+      discovery:
+        enabled: true
+    sender:
+      type: web
   sleuth:
    #监控开关
     enabled: true
