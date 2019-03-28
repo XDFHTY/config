@@ -3,8 +3,7 @@ web:
   upload-path:  D:/file/uj/
 spring:
   zipkin:
-    base-url: http://118.123.16.211:9411/
-    enabled: true
+    base-url: http://118.123.16.211:9411
   sleuth:
     sampler:
       percentage: 1
