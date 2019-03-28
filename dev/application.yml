@@ -1,10 +1,9 @@
-zipkin:
-  url:  http://127.0.0.1:9411/
+
 web:
   upload-path:  D:/file/uj/
 spring:
   zipkin:
-    base-url: ${zipkin.url}
+    base-url: http://118.123.16.211:9411/
     enabled: true
   sleuth:
     sampler:
