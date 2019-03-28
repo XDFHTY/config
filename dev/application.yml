@@ -4,6 +4,9 @@ web:
 spring:
   zipkin:
     base-url: http://118.123.16.211:9411
+    #本项目服务名
+    service:
+      name: ${spring.application.name}
   sleuth:
    #监控开关
     enabled: true
