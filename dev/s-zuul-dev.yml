@@ -49,18 +49,6 @@ zuul:
   ignored-headers:  Access-Control-Allow-Origin,H-APP-Id,Token,APPToken
   strip-prefix: true
 #  ignored-patterns: '*'
-hystrix:
-  command:
-    default:
-      execution:
-        timeout:
-          enabled: true
-        isolation:
-          thread:
-            timeoutInMilliseconds: 600000
-ribbon:
- ReadTimeout: 60000  # 单位毫秒数
- SocketTimeout: 60000
 
 datapram:
   tooldir: mysqldump
