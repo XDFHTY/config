@@ -5,6 +5,8 @@ spring:
   zipkin:
     base-url: http://118.123.16.211:9411
   sleuth:
+   #监控开关
+    enabled: true
     sampler:
       percentage: 1.0
   rabbitmq:
