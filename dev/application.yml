@@ -3,7 +3,7 @@ web:
   upload-path:  D:/file/uj/
 spring:
   zipkin:
-    base-url: http://118.123.16.211:9411
+    base-url: http://59.110.164.54:9411
     #本项目服务名
     service:
       name: ${spring.application.name}
