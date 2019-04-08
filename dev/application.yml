@@ -68,9 +68,9 @@ tx-lcn:
     manager-address: ENC(vdESOQXZYndFhdFY850ckoFraCHljumdLNGTr1Z+hkM=)
     tm-rpc-timeout: 2000
 ribbon:
-  ReadTimeout: 60000
-  ConnectTimeout: 60000
-  SocketTimeout: 60000
+  ReadTimeout: 10000
+  ConnectTimeout: 10000
+  SocketTimeout: 10000
 hystrix:
   command:
     default:
