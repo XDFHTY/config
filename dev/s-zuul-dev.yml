@@ -49,7 +49,9 @@ zuul:
   ignored-headers:  Access-Control-Allow-Origin,H-APP-Id,Token,APPToken
   strip-prefix: true
 #  ignored-patterns: '*'
-
+  #重试
+  retryable: true
+  
 datapram:
   tooldir: mysqldump
   ip: 118.123.16.211
