@@ -51,6 +51,11 @@ zuul:
 #  ignored-patterns: '*'
   #重试
   retryable: true
+ribbon: 
+  ReadTimeout: 10000 
+  ConnectTimeout: 10000 
+  MaxAutoRetries: 2
+  MaxAutoRetriesNextServer: 1 
   
 datapram:
   tooldir: mysqldump
