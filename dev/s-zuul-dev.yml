@@ -51,11 +51,16 @@ zuul:
 #  ignored-patterns: '*'
   #重试
   retryable: true
-ribbon: 
-  ReadTimeout: 30000 
-  ConnectTimeout: 30000 
-  MaxAutoRetries: 2
-  MaxAutoRetriesNextServer: 1 
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 60000
+ribbon:
+  connectTimeout: 3000
+  readTimeout: 20000
   
 datapram:
   tooldir: mysqldump
