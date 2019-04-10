@@ -72,9 +72,7 @@ ribbon:
   ConnectTimeout: 30000
   SocketTimeout: 30000
 
-feign:
-  hystrix:
-    enabled: true
+
 hystrix:
   command:
     default:
