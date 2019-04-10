@@ -71,11 +71,16 @@ ribbon:
   ReadTimeout: 30000
   ConnectTimeout: 30000
   SocketTimeout: 30000
+
+feign:
+  hystrix:
+    enabled: true
 hystrix:
   command:
     default:
       execution:
         timeout:
+        #如果enabled设置为false，则请求超时交给ribbon控制
           enabled: true
         isolation:
           thread:
