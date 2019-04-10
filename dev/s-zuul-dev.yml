@@ -52,10 +52,6 @@ zuul:
   #重试
   retryable: true
 
-ribbon:
-  connectTimeout: 3000
-  readTimeout: 20000
-  
 datapram:
   tooldir: mysqldump
   ip: 118.123.16.211
