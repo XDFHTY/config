@@ -51,13 +51,7 @@ zuul:
 #  ignored-patterns: '*'
   #重试
   retryable: true
-hystrix:
-  command:
-    default:
-      execution:
-        isolation:
-          thread:
-            timeoutInMilliseconds: 60000
+
 ribbon:
   connectTimeout: 3000
   readTimeout: 20000
