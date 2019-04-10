@@ -52,8 +52,8 @@ zuul:
   #重试
   retryable: true
 ribbon: 
-  ReadTimeout: 10000 
-  ConnectTimeout: 10000 
+  ReadTimeout: 30000 
+  ConnectTimeout: 30000 
   MaxAutoRetries: 2
   MaxAutoRetriesNextServer: 1 
   
