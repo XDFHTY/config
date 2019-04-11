@@ -50,7 +50,7 @@ zuul:
   strip-prefix: true
 #  ignored-patterns: '*'
   #重试
-  retryable: false
+  retryable: true
 
 datapram:
   tooldir: mysqldump
