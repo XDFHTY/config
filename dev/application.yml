@@ -1,4 +1,8 @@
-
+server:
+  tomcat:
+    accept-count: 50
+    max-threads: 200
+    max-connections: 6000
 web:
   upload-path:  D:/file/uj/
 spring:
@@ -67,19 +71,4 @@ tx-lcn:
   client:
     manager-address: ENC(vdESOQXZYndFhdFY850ckoFraCHljumdLNGTr1Z+hkM=)
     tm-rpc-timeout: 2000
-ribbon:
-  ReadTimeout: 30000
-  ConnectTimeout: 30000
-  SocketTimeout: 30000
 
-
-hystrix:
-  command:
-    default:
-      execution:
-        timeout:
-        #如果enabled设置为false，则请求超时交给ribbon控制
-          enabled: true
-        isolation:
-          thread:
-            timeoutInMilliseconds: 120000
