@@ -9,3 +9,4 @@ spring:
 mybatis:
   mapper-locations: classpath:com/cj/sadmin/mapper/*.xml
 
+fo: s-admin-fo
