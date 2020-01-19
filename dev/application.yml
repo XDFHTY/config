@@ -22,7 +22,7 @@ spring:
     sampler:
       percentage: 1.0
   rabbitmq:
-    host: ENC(+YJKD0Er8jXxXpb2DVnp097KOVmjUAQ8)
+    host: 139.224.195.76
     port: 5672
     username: ENC(SIfHH2M5id/U0ZI03x+Nbg==)
     password: ENC(SIfHH2M5id/U0ZI03x+Nbg==)
@@ -37,10 +37,9 @@ spring:
       simple:
         acknowledge-mode: manual
   redis:
-    host: ENC(ttbY+nvTWlPDb05Vsi6wqlliA6FwSJ8U)
-    #host: 192.168.0.113
-    port: 6379
-    timeout: 0
+    host: 139.224.195.76
+    port: 16379
+    timeout: 1
     pool:
       max-wait: -1
       max-active: 5
@@ -69,6 +68,6 @@ mybatis:
   mapper-locations: classpath:com/cj/common/mapper/*.xml
 tx-lcn:
   client:
-    manager-address: ENC(vdESOQXZYndFhdFY850ckoFraCHljumdLNGTr1Z+hkM=)
+    manager-address: 192.168.1.185:8070
     tm-rpc-timeout: 2000
 
