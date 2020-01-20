@@ -69,5 +69,5 @@ mybatis:
 tx-lcn:
   client:
     manager-address: 192.168.1.185:8070
-    tm-rpc-timeout: 2000
+
 
