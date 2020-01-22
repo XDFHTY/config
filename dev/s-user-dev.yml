@@ -1,6 +1,6 @@
 spring:
   datasource:
-    url: ENC(KSvg4LgHCDd7HKXPVlXDBodobotDEUyNQfxl/CHsmy0TiAgKQDNUENVXJkHduzf5vr7tYJOzAHyGIGN2r6x4amtSe30+/omkYUFjIt6g074e1t+wSlgV+ILeNa/XsUxRBWC9cvJAeSfH0+VRHVM1aQ==)
+    url: jdbc:mysql://139.224.195.76:63306/ujiev2_1_test?characterEncoding=UTF-8&useSSL=false&allowMultiQueries=true
     username: ENC(9aNi3IHj2H6kZr0ODNHtyA==)
 #    password: ENC(9aNi3IHj2H6kZr0ODNHtyA==)
     password: ENC(TkOCIol7cpFd41MfpYYQBK+giiV3zOn3)
@@ -8,4 +8,5 @@ spring:
     type: com.alibaba.druid.pool.DruidDataSource
 mybatis:
   mapper-locations: classpath:com/cj/suser/mapper/*.xml
+fo2: s-user-dev
 
