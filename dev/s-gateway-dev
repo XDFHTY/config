@@ -11,7 +11,7 @@ spring:
           lower-case-service-id: true
       routes:
       - id: sa
-        uri: lb://S-ADMIN
+        uri: lb://s-admin
         predicates:
           - Path=/s-admin/**
         filters:
