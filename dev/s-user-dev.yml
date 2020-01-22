@@ -8,5 +8,5 @@ spring:
     type: com.alibaba.druid.pool.DruidDataSource
 mybatis:
   mapper-locations: classpath:com/cj/suser/mapper/*.xml
-fo2: s-user-dev
+fo2: s-user-dev-2
 
