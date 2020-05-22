@@ -92,5 +92,22 @@ tx-lcn:
   client:
     manager-address: 139.224.197.220:8070
 
+feign:
+  hystrix:
+    enabled: true //feign开启hystrix支持
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 20000
+#ribbon的超时时间, 防止feign调用超时
+ribbon:
+  ReadTimeout: 15000
+  ConnectTimeout: 15000
+  MaxAutoRetries: 1 #同一台实例最大重试次数,不包括首次调用
+  MaxAutoRetriesNextServer: 1 #重试负载均衡其他的实例最大重试次数,不包括首次调用
+  OkToRetryOnAllOperations: false  #是否所有操作都重试
 
 
