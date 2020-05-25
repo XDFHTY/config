@@ -91,10 +91,10 @@ mybatis-plus:
 tx-lcn:
   client:
     manager-address: 139.224.197.220:8070
-
+#feign开启hystrix支持
 feign:
   hystrix:
-    enabled: true //feign开启hystrix支持
+    enabled: true
 hystrix:
   command:
     default:
